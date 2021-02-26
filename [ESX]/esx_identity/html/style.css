@@ -1,0 +1,144 @@
+@font-face {
+  font-family: pcdown;
+  src: url('fonts/pdown.ttf');
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/Roboto-Regular.ttf') /* TTF file for CSS3 browsers */
+}
+
+
+body {
+    font-family: roboto;
+    overflow: hidden;
+    display: none;
+}
+
+#cursor {
+    position: absolute;
+    z-index: 999999;
+    display: none;
+}
+
+.create {
+    margin-top: 100px;
+    position: absolute;
+    width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+#register{
+    display:flex;
+    flex-direction: column;
+}
+
+
+.infos {
+    width: 1100px;
+    background-color: #2b0b58;
+    background-image: linear-gradient( to top, rgba(255,255,255,0.1), #2b0b58);
+}
+.left-flex{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.logo{
+    width: 510px;
+    height: 250px;
+    display: block;
+    background: url(logo.png) no-repeat 50%;
+    background-size: 75%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.title-discord{
+    padding:20px;
+    width: 50%;
+    margin: auto;
+    color:white;
+    text-align: center;
+    font-size: 15px;
+}
+.discord{
+    padding:20px;
+    background-color: rgba(256, 256, 256, 0.1);
+    width: 50%;
+    margin: auto;
+    color:white;
+    text-align: center;
+    font-size: 20px;
+}
+.dialog {
+    padding: 80px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+input[type=text] {
+    padding: 15px;
+	text-align: left;
+    border:1px solid rgba(256, 256, 256, 0);
+    margin-bottom:15px;
+    background-color: rgba(256, 256, 256, 0.1);
+    color:white;
+    text-align:center;
+    font-size:17px;
+    font-weight: lighter;
+    flex-direction: column;
+    width: 400px;
+    transition: all 0.5s;
+}
+input[type=text]::placeholder {
+    color:white;
+    font-weight: lighter;
+    color: rgba(256, 256, 256, 0.2);
+}
+
+input[type=text]:hover {
+   border:1px solid rgba(256, 256, 256, 0.4);
+
+}
+
+button {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: Blue;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    cursor:pointer;
+    background-color: #0a3d7e;
+    background-image: linear-gradient( to right, rgba(255,255,255,0.1), #0a3d7e);
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+button:hover {
+    background-color: #2c6bbb;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 52px;
+    font-family: pcdown;
+    line-height: 50px;
+    display: block;
+    color: #fff;
+	text-align: center;
+    margin-bottom: 100px;
+}
+
+.error {
+    border: 1px solid red !important;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}

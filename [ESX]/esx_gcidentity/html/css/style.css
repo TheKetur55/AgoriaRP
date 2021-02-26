@@ -1,0 +1,33 @@
+@import url('http://fr.allfont.net/allfont.css?fonts=comic-sans-ms');
+
+body{
+  margin:0;
+  padding: 0;
+}
+.over{
+    position: absolute;
+    display: block;
+    position: absolute;
+    display: block;
+    top: 8px;
+    left: 7px;
+    right: 11px;
+    bottom: 8px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%,
+    rgba(241,241,241,0.3) 50%,
+    rgba(225,225,225,0.2) 51%,
+    rgba(246,246,246,0.1) 100%); 
+}
+#cursor {
+    position: absolute;
+    z-index: 99999999;
+    display: none;
+}
+
+#card {
+    position: absolute;
+    z-index: 99999999;
+    width: 100%;
+    height: 100%;
+}

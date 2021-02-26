@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Coda');
+
+/* Job */
+#weaponlicence{
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#weaponlicence span {
+  position: absolute;
+  font-family: 'Coda', cursive;
+}
+
+#weaponlicence {
+  background-image: url('../../img/cards/weaponlicence/armes.png');
+  width: 364px;
+  height: 349px;
+  top: 50px;
+  right: 50px;
+}
+
+#weaponlicence span {
+  display: none
+}
+
+#weaponlicence:after {
+  content: 'ARMES';
+  font-family: 'Coda', cursive;
+  top: 208px;
+  left: 211px;
+  font-size: 16px;
+  position: absolute;
+}
+
+#weaponlicence span#lastname {
+  display: block;
+  top: 167px;
+  left: 211px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#weaponlicence span#firstname {
+  display: block;
+  top: 127px;
+  left: 211px;
+  font-size: 16px;
+  text-transform: uppercase;
+}

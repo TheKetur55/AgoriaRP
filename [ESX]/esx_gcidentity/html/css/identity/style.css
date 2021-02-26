@@ -1,0 +1,89 @@
+  /* Identity */
+#identity{
+  position: absolute;
+  width: 600px;
+  height: 411px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50px;
+  right: 50px;
+  font-weight:700;
+  font-size: 0.9em;
+  color: #DFD6D6;
+}
+
+#identity.sex_F {
+  background-image: url('../../img/cards/identity/f.png');
+}
+
+#identity.sex_H {
+  background-image: url('../../img/cards/identity/m.png');
+}
+
+#identity span {
+    position: absolute;
+    font-family: 'Comic Sans MS', arial;
+    text-align: left;
+    color: #DFD6D6;
+}
+
+#identity #firstname {
+  top: 160px;
+  color: #DFD6D6;
+  left: 150;
+  width: 95px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 20px;
+}
+
+#identity #lastname {
+    top: 123px;
+   color: #DFD6D6;
+   left: 110;
+    width: 95px;
+    height: 15px;
+    line-height: 15px;
+     font-size: 20px;
+}
+
+#identity #birthday {
+    top: 200px;
+    color: #DFD6D6;
+    left: 110;
+    width: 95px;
+    height: 15px;
+    line-height: 15px;
+     font-size: 18px;
+}
+
+#identity #sex {
+    top: 238px;
+    color: #DFD6D6;
+    left: 110;
+    width: 95px;
+    height: 15px;
+    line-height: 15px;
+     font-size: 20px;
+}
+
+#identity #height {
+    top: 280px;
+    color: #DFD6D6;
+    left: 110;
+    width: 95px;
+    height: 15px;
+    line-height: 15px;
+     font-size: 20px;
+}
+
+#identity #permis {
+    top: 304px;
+    color: #DFD6D6;
+    left: 353px;
+    width: 95px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 15px;
+}

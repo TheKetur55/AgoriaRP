@@ -1,0 +1,404 @@
+/* Job */
+#job{
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #DFD6D6;
+}
+
+
+#job span {
+  position: absolute;
+  font-family: 'Comic Sans MS', arial;
+  color: #DFD6D6;
+}
+
+#job.job_police {
+  background-image: url('../../img/cards/job/police.png');
+  width: 264px;
+  height: 349px;
+  top: 50px;
+  right: 50px;
+}
+
+
+
+
+#job.job_ambulance {
+  background-image: url('../../img/cards/job/ambulance.png');
+  width: 624px;
+  height: 369px;
+  top: 50px;
+  right: 50px;
+}
+
+
+
+#job.job_iaa {
+  background-image: url('../../img/cards/job/iaa.png');
+  width: 624px;
+  height: 369px;
+  top: 50px;
+  right: 50px;
+  color: #DFD6D6;
+}
+
+
+
+#job.job_mecano {
+  background-image: url('../../img/cards/job/mecano.png');
+  width: 624px;
+  height: 369px;
+  top: 50px;
+  right: 50px;
+}
+
+#job.job_reporter {
+  background-image: url('../../img/cards/job/reporter.png');
+  width: 624px;
+  height: 369px;
+  top: 50px;
+  right: 50px;
+}
+
+#job.job_taxi {
+  background-image: url('../../img/cards/job/taxi.png');
+  width: 548px;
+  height: 312px;
+  top: 50px;
+  right: 50px;
+  color: white;
+}
+
+#job.job_farmer {
+  background-image: url('../../img/cards/job/farmer.png');
+  width: 624px;
+  height: 369px;
+  top: 50px;
+  right: 50px;
+  color: white;
+}
+
+#job.job_party {
+  background-image: url('../../img/cards/job/party.png');
+  width: 624px;
+  height: 369px;
+  top: 50px;
+  right: 50px;
+  color: white;
+}
+
+#job.job_realestateagent {
+  background-image: url('../../img/cards/job/realestateagent.png');
+  width: 624px;
+  height: 369px;
+  top: 50px;
+  right: 50px;
+  color: white;
+}
+
+#job.job_taxi span#firstname {
+  left:75px;
+  top: 210px;
+}
+
+#job.job_taxi span#lastname {
+  left:250px;
+  top: 210px;
+}
+
+#job.job_taxi span#job_grade {
+  left:75;
+  top: 230px;
+}
+
+#job.job_taxi span#job_grade::before {
+  content: "Poste occupé: ";
+
+}
+
+
+#job.job_unemployed,
+#job.job_taxi span#job_name,
+#job.job_police span,
+#job.job_police span {
+  display: none;
+}
+
+
+#job.job_police span#job_grade {
+  display: block;
+  top: 240px;
+  width: 200px;
+  left: 32px;
+  text-align: center;
+}
+
+#job.job_party span#firstname {
+  display: block;
+  top: 258px;
+  left: 74px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_party span#lastname {
+  display: block;
+  top: 283px;
+  left: 74px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_party span#job_grade {
+  display: block;
+  top: 252px;
+  left: 441px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_mecano span#firstname {
+  display: block;
+  top: 258px;
+  left: 74px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_mecano span#lastname {
+  display: block;
+  top: 283px;
+  left: 74px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_mecano span#job_grade {
+  display: block;
+  top: 252px;
+  left: 441px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_reporter span#firstname {
+  display: block;
+  top: 258px;
+  left: 74px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_reporter span#lastname {
+  display: block;
+  top: 283px;
+  left: 74px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_reporter span#job_grade {
+  display: block;
+  top: 252px;
+  left: 441px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_realestateagent span#firstname {
+  display: block;
+  top: 258px;
+  left: 74px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_realestateagent span#lastname {
+  display: block;
+  top: 283px;
+  left: 74px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_realestateagent span#job_grade {
+  display: block;
+  top: 252px;
+  left: 441px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_farmer span#firstname {
+  display: block;
+  top: 258px;
+  left: 74px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_farmer span#lastname {
+  display: block;
+  top: 283px;
+  left: 74px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+
+
+
+#job.job_iaa span#firstname {
+  display: block;
+  top: 100px;
+  left: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #DFD6D6;
+}
+
+#job.job_iaa span#lastname {
+  display: block;
+  top: 120px;
+  left: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #DFD6D6;
+}
+
+#job.job_iaa span#job_grade {
+  display: block;
+  top: 325px;
+  left: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #DFD6D6;
+}
+
+#job.job_iaa span#job_name {
+  display: block;
+  top: 300px;
+  left: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #DFD6D6;
+}
+
+
+
+
+#job.job_ambulance span#firstname {
+  display: block;
+  top: 10px;
+  left: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #DFD6D6;
+}
+
+#job.job_ambulance span#lastname {
+  display: block;
+  top: 30px;
+  left: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #DFD6D6;
+}
+
+#job.job_ambulance span#job_grade {
+  display: block;
+  top: 325px;
+  left: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #DFD6D6;
+}
+
+#job.job_ambulance span#job_name {
+  display: block;
+  top: 300px;
+  left: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #DFD6D6;
+}
+
+
+#job.job_vigneron span#firstname {
+  display: block;
+  top: 258px;
+  left: 74px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_vigneron span#lastname {
+  display: block;
+  top: 283px;
+  left: 74px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_vigneron span#job_grade {
+  display: block;
+  top: 252px;
+  left: 441px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_brasseur span#firstname {
+  display: block;
+  top: 258px;
+  left: 74px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_brasseur span#lastname {
+  display: block;
+  top: 283px;
+  left: 74px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_brasseur span#job_grade {
+  display: block;
+  top: 252px;
+  left: 441px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#job.job_party span#job_name {
+  display: none;
+}
+
+#job.job_mecano span#job_name {
+  display: none;
+}
+
+#job.job_reporter span#job_name {
+  display: none;
+}
+
+#job.job_realestateagent span#job_name {
+  display: none;
+}
+
+#job.job_farmer span#job_name {
+  display: none;
+}
+
+
+#job.job_vigneron span#job_name {
+  display: none;
+}
+
+#job.job_brasseur span#job_name {
+  display: none;
+}

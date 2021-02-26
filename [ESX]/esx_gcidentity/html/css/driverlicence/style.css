@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Coda');
+
+/* Job */
+#driverlicence{
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#driverlicence span {
+  position: absolute;
+  font-family: 'Coda', cursive;
+}
+
+#driverlicence.driver_auto {
+  background-image: url('../../img/cards/driverlicence/auto.png');
+  width: 364px;
+  height: 349px;
+  top: 50px;
+  right: 50px;
+}
+
+#driverlicence.driver_moto {
+  background-image: url('../../img/cards/driverlicence/moto.png');
+  width: 364px;
+  height: 349px;
+  top: 50px;
+  right: 50px;
+}
+
+#driverlicence.driver_truck {
+  background-image: url('../../img/cards/driverlicence/camion.png');
+  width: 364px;
+  height: 349px;
+  top: 50px;
+  right: 50px;
+}
+
+#driverlicence span {
+  display: none
+}
+
+#driverlicence.driver_auto:after {
+  content: 'Voiture';
+}
+
+
+#driverlicence.driver_moto:after {
+  content: 'Moto';
+}
+
+
+#driverlicence.driver_truck:after {
+  content: 'Poid Lourd';
+}
+
+
+#driverlicence:after {
+  font-family: 'Coda', cursive;
+  top: 208px;
+  left: 211px;
+  font-size: 16px;
+  position: absolute;
+}
+
+#driverlicence span#lastname {
+  display: block;
+  color : red;
+  top: 167px;
+  left: 211px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#driverlicence span#firstname {
+  display: block;
+  top: 127px;
+  left: 211px;
+  font-size: 16px;
+  text-transform: uppercase;
+}

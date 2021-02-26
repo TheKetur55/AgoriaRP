@@ -1,0 +1,115 @@
+<style>
+
+	.app {
+		display: none;
+		background-image: url('img/tablet.png');
+		background-size: 100%;
+
+		position:absolute;
+		left:0; right:0;
+		top:0; bottom:0;
+		margin: auto;
+	
+		height: 843px;
+		width: 566px;
+		overflow: hidden;
+	
+	}
+	
+	#screen {
+	
+		position:absolute;
+		left:0; right:0;
+		top:11; bottom:0;
+		margin: auto;
+	
+		height: 685px;
+		width: 425px;
+		overflow:auto;
+	}
+	
+	#banner {
+		background-image: url('img/header.png');
+		background-color: red;
+		height: 132px;
+	}
+	
+	body {
+		
+		height: 100%;
+	}
+	
+	textarea {
+		
+		width: 100%;
+		
+	}
+	
+	.editor {
+		
+		width: 100%;
+		
+	}
+	
+	
+	</style>
+	
+	<head>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="scripts.js" type="text/javascript"></script>
+		<script src="debounce.min.js" type="text/javascript"></script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles.css" type="text/css">
+	</head>
+	
+	<body>
+		<div class = "app">
+		
+				
+				<div class = "w3-w" id = "screen">
+				
+					<div class = "w3-container" id = "banner">
+					</div>
+					
+					<div class = "editor w3-container w3-white">
+
+						<br>
+						<div class "radiolife w3-white">
+							<b>Métier:</b><br>
+							<input id = "police" type="radio" name="type" value="police" checked> Police <br>
+							<input id = "ambulance" type="radio" name="type" value="ambulance" checked> LSMD <br>
+						<input id = "journalist" type="radio" name="type" value="journalist" checked> Vénétie Industry [ Uber ] <br> 
+							<input id = "cardealer" type="radio" name="type" value="cardealer" checked> Tequilala <br> 
+							<input id = "mechanic" type="radio" name="type" value="mechanic" checked> Benny's <br>
+							<input id = "realestate" type="radio" name="type" value="realestate" checked> Vigneron <br> 
+							<input id = "taxi" type="radio" name="type" value="taxi" checked> El Venetie's Club <br>   
+							<input id = "delivery" type="radio" name="type" value="delivery" checked> Vanilla Unicorn <br>    -->
+							<br>
+						</div>
+						
+						<b>Numéro de téléphone</b>
+						<textarea class = "phone w3-white" rows="1" placeholder="#555XXX"></textarea>
+						<br>
+						<br>
+						
+						<b>Date de naissance</b>
+						<textarea class = "licenses w3-white" rows="1" placeholder="JJ/MM/AAAA"></textarea>
+						<br>
+						<br>
+						
+						<b>Présentation</b>
+						<textarea class = "exp w3-white" rows="20" placeholder="Présenter vous"></textarea>
+						<br>
+						<br>
+
+						<b>Votre identité est sauvegarder.</b><br>
+						<br>
+						
+						<button class="w3-button w3-green w3-left btnSend">Confirmer</button>
+						<button class="w3-button w3-red w3-left btnClose">Refuser</button>
+						
+					</div>
+					
+					
+				</div></div>	
+	</body>

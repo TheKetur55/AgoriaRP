@@ -1,0 +1,75 @@
+ESX               = nil
+
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+
+function LoadLicenses (source)
+  TriggerEvent('esx_license:getLicenses', source, function (licenses)
+    TriggerClientEvent('esx_weashop2:loadLicenses', source, licenses)
+  end)
+end
+
+if Config.EnableLicense == true then
+  AddEventHandler('esx:playerLoaded', function (source)
+    LoadLicenses(source)
+  end)
+end
+
+RegisterServerEvent('esx_weashop2:buyLicense')
+AddEventHandler('esx_weashop2:buyLicense', function (price, wtype)
+  local _source = source
+  local xPlayer = ESX.GetPlayerFromId(source)
+
+  if xPlayer.get('money') >= price then
+    xPlayer.removeMoney(price)
+    TriggerEvent('esx_license:addLicense', _source, wtype, function ()
+      LoadLicenses(_source)
+    end)
+  else
+    TriggerClientEvent('esx:showNotification', _source, _U('not_enough'))
+  end
+end)
+
+RegisterServerEvent('esx_weashop2:buyItem')
+AddEventHandler('esx_weashop2:buyItem', function(itemName, price, zone)
+
+  local _source = source
+  local xPlayer  = ESX.GetPlayerFromId(source)
+  local account = xPlayer.getAccount('black_money')
+
+  if zone=="BlackWeashop" then
+    if account.money >= price then
+
+    xPlayer.removeAccountMoney('black_money', price)
+    xPlayer.addWeapon(itemName, 100000)
+    TriggerClientEvent('esx:showNotification', _source, _U('buy') .. ESX.GetWeaponLabel(itemName))
+
+  else
+    TriggerClientEvent('esx:showNotification', _source, _U('not_enough_black'))
+  end
+
+  else if xPlayer.get('money') >= price then
+
+    xPlayer.removeMoney(price)
+    xPlayer.addWeapon(itemName, 100000)
+
+    TriggerClientEvent('esx:showNotification', _source, _U('buy') .. ESX.GetWeaponLabel(itemName))
+
+  else
+    TriggerClientEvent('esx:showNotification', _source, _U('not_enough'))
+  end
+  end
+
+end)
+
+
+
+
+RegisterServerEvent('esx_weashop:remove')
+AddEventHandler('esx_weashop:remove', function()
+  local xPlayer = ESX.GetPlayerFromId(source)
+  xPlayer.removeInventoryItem('clip', 1)
+end)
+
+ESX.RegisterUsableItem('clip', function(source)
+  TriggerClientEvent('esx_weashop:clipcli', source)
+end)
